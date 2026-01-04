@@ -34,7 +34,7 @@ function UserLogin() {
       alert("User logged in successfully");
       localStorage.setItem("user", JSON.stringify(form));
       setForm({ name:"", email:"", password:"" });
-      navigate("/user-dashboard");
+      navigate("/UserDashboard");
     } else {
       setErrors(validationErrors);
     }
