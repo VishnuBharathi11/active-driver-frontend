@@ -34,7 +34,7 @@ function DriverLogin() {
       alert("Driver logged in successfully");
       localStorage.setItem("driver", JSON.stringify(form));
       setForm({ name:"", email:"", password:"" });
-      navigate("/driver-dashboard");
+      navigate("/DriverDashboard");
     } else {
       setErrors(validationErrors);
     }
